@@ -33,7 +33,7 @@ export default function SignupForm() {
                     email: email,
                     options: {
                       
-                      emailRedirectTo: 'http://localhost:5173/'
+                      emailRedirectTo: 'https://mfa-one.vercel.app/'
                     }
                   } ,)
             } catch (error) {
