@@ -39,14 +39,16 @@ export default function Landing() {
     return (
         <>
             {loggedEmail && loggedUsername ? (
-                <div>raid testing
-                    <button
-                        onClick={handleLogOut}
-                        style={{ backgroundColor: "#C92A2A", fontFamily: 'Oswald', marginTop: 26, border: 'none', padding: '10px 20px', cursor: 'pointer', borderRadius: '5px', color: '#fff' }}
-                    >
-                        Signout
-                    </button>
+                <div class="container">
+                <div class="column">
+                    <div class="col-md-6">
+                        <p class="profile-name">Hello {loggedUsername} You have succefully logged in !</p>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-danger btn-signout" onClick={handleLogOut}>Signout</button>
+                    </div>
                 </div>
+            </div>
 
             ) : (
                 <nav id="page-top">
